@@ -24,6 +24,13 @@ class RRBOT extends ActivityHandler {
             await next();
         });
 
+        this.onDialog(async (context, next) => {
+            // Save any state changes. The load happened during the execution of the Dialog.
+            await this.conversationState.saveChanges(context, false);
+            await this.userState.saveChanges(context, false);
+            await next();
+        });   
+
         this.onMembersAdded(async (context, next) => {
             await this.sendWelcomeMessage(context)
             // By calling next() you ensure that the next BotHandler is run.
@@ -42,6 +49,12 @@ class RRBOT extends ActivityHandler {
             }
         }
     }
+
+    async sendSuggestedActions(turnContext) {
+        var reply = MessageFactory.suggestedActions(['Make Reservation','Cancel Reservation','Restaurant Address'],'What would you like to do today ?');
+        await turnContext.sendActivity(reply);
+    }
+
 
     async dispatchToIntentAsync(context){
 
@@ -83,11 +96,7 @@ class RRBOT extends ActivityHandler {
 
     }
 
-    async sendSuggestedActions(turnContext) {
-        var reply = MessageFactory.suggestedActions(['Make Reservation','Cancel Reservation','Restaurant Address'],'What would you like to do today ?');
-        await turnContext.sendActivity(reply);
-    }
-
+  
 }
 
 module.exports.RRBOT = RRBOT;
