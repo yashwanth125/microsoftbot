@@ -71,6 +71,12 @@ async getName(step){
     { 
     return await step.prompt(TEXT_PROMPT, 'In what name reservation is to be made?');
     }
+    if(step.result === false)
+    { 
+        await step.context.sendActivity("You chose not to go ahead with reservation.");
+        endDialog = true;
+        return await step.endDialog();   
+    }
 
 }
 
