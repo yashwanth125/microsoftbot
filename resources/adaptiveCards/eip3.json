@@ -1,0 +1,31 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "medium",
+            "weight": "bolder",
+            "text": "Who can help me?"
+        },
+
+        {
+            "type": "TextBlock",
+            "text": "There are 3 primary teams in RDSS (Research & Development Strategic Sourcing)",
+            "wrap": true
+        },
+        {
+            "type": "TextBlock",
+            "text": "- **EIP Operations**:  EIP Operations: primary contact when unsure of an issue (after reading this web site). EIP Operations will serve as a first contact point for licensing, accessing or disclosing the IP \r- **EIP PM Office (PMO):**  technical interfaces to EIP usage. Can provide advice, drive evaluations, interface with vendors. \r- **Business Account Managers (BAMs):** Own the business relationships with our vendors. If you become involved in EIP, you will occasionally interface with BAMs ",
+            "wrap": true
+        },
+       
+        {
+            "type": "TextBlock",
+            "text": "_Representatives from each of these organizations will be pulled into your requests at the right time if you follow the processes described on this web site and driven by your SOC EIP Owner._",
+            "wrap": true
+        }
+        
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0"
+}

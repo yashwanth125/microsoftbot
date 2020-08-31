@@ -1,0 +1,19 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "medium",
+            "weight": "bolder",
+            "text": "What is BOM?"
+        },
+        {
+            "type": "TextBlock",
+            "text": "_A Bill of Materials (BOM) is a list of IP’s on a product (a chip). This list is to be maintained in DSS. The DSS EIP Dashboard is the place to learn important attributes of each element in the product, like license status and technical matters like the version used._",
+            "wrap": true
+        }
+        
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0"
+}

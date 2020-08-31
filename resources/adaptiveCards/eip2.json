@@ -1,0 +1,20 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "medium",
+            "weight": "bolder",
+            "text": "how can i get started?"
+        },
+
+        {
+            "type": "TextBlock",
+            "text": "- If your team is new to Intel or new to SOC design, it will be most effective for your team to choose an SOC EIP Owner \r- Please see the SOC EIP Owner section of this introduction \r- This person should become proficient in all matters of EIP usage \r1. Licensing \r2. Access \r3. Legal Compilance(**Using the IP and disclosing IP**)  ",
+            "wrap": true
+        }
+        
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0"
+}

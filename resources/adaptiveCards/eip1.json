@@ -1,0 +1,19 @@
+{
+    "type": "AdaptiveCard",
+    "body": [
+        {
+            "type": "TextBlock",
+            "size": "medium",
+            "weight": "bolder",
+            "text": "What is EIP?"
+        },
+        {
+            "type": "TextBlock",
+            "text": "Any references to External IP on this web page or by these organizations is targeting on-chip IP. More specifically, it can be soft IP, hard IP or foundational IP. Soft IP is not specific to a given silicon process, it is delivered by RTL which can be implemented in a variety of processes. Hard IP is specific to a process, delivered in GDS. Finally, foundational IP are the libraries and memory compilers used to synthesize logic to the necessary technology.",
+            "wrap": true
+        }
+        
+    ],
+    "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+    "version": "1.0"
+}
